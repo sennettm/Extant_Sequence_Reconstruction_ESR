@@ -23,3 +23,6 @@ We have used ESR to visualize the relative uncertainty of a probability distribu
 
 To improve the likelihood of this tree we should include more closely related sequences to those colored in red, since it will help reduce the uncertainty of sequences in those clades.
 
+**Requirements for ESR**
+
+IQ-Tree: http://www.iqtree.org/#download
