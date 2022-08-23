@@ -1,4 +1,4 @@
-# Extant_Sequence_Reconstruction_ESR
+# Extant Sequence Reconstruction (ESR)
 Calculate conditional probability distributions of extant sequences given a phylogenetic tree, sequence alignment, and evolutionary model.
 Extant Sequence Reconstruction
 Extant sequence reconstruction (ESR) is a workflow to calculate the conditional probability distribution of an extant sequence given an alignment, a phylogenetic tree, and an evolutionary model.
