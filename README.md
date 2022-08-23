@@ -2,15 +2,15 @@
 
 ## Overview
 
-What is ESR?
+**What is ESR?**
 
 Extant sequence reconstruction (ESR) is a workflow to calculate the conditional probability distribution of an extant sequence given an alignment, a phylogenetic tree, and an evolutionary model.
 
-Motivation behind ESR?
+**What is the motivation behind ESR?**
 
 This is useful for researchers who use ancestral sequence reconstruction (ASR) and have ever wondered whether a model parameter is actually improving your ancestral sequence reconstructions. ESR provides a mechanism for researchers to evaluate sequence reconstructions, since you can compare a sequence reconstruction to the true sequence. ESR is tool to provide a gold-standard to benchmark sequence reconstructions.
 
-How does ESR work?
+**How does ESR work?**
 
 ESR works by applying a leave-one-out cross-validation to each sequence in a phylogenetic tree and alignment.  
 
@@ -18,7 +18,7 @@ ESR works by applying a leave-one-out cross-validation to each sequence in a phy
 
 In short, extant nodes are treated like unknown ancestral nodes. A conditional probability distribution is calculated for an extant node, from which a sequence can be generated. This reconstructed sequence and its properties can be compared to the true sequence and its properties. 
 
-What can we do with ESR?
+**What can we do with ESR?**
 
 We have determined that using the LG substitution matrix instead of the Poisson substitution matrix may slightly increase the number of incorrect residues in the most probable sequence reconstructions, but the most probable sequence reconstructions from LG are still more chemically similar to the true sequence than the most probable reconstructions from the Poisson.
 
