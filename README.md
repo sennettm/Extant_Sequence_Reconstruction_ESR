@@ -26,3 +26,9 @@ To improve the likelihood of this tree we should include more closely related se
 **Requirements for ESR**
 
 IQ-Tree: http://www.iqtree.org/#download
+
+Dendropy:
+```
+conda install -c bioconda dendropy
+```
+
