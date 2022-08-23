@@ -1,4 +1,7 @@
 # Extant Sequence Reconstruction (ESR)
+
+## Overview
+
 What is ESR?
 
 Extant sequence reconstruction (ESR) is a workflow to calculate the conditional probability distribution of an extant sequence given an alignment, a phylogenetic tree, and an evolutionary model.
@@ -17,18 +20,45 @@ In short, extant nodes are treated like unknown ancestral nodes. A conditional p
 
 What can we do with ESR?
 
-We have used ESR to visualize the relative uncertainty of a probability distribution to demonstrate where information is lacking in a phylogenetic tree. 
+We have determined that using the LG substitution matrix instead of the Poisson substitution matrix may slightly increase the number of incorrect residues in the most probable sequence reconstructions, but the most probable sequence reconstructions from LG are still more chemically similar to the true sequence than the most probable reconstructions from the Poisson.
+
+In addition, we have used ESR to visualize the relative uncertainty of a probability distribution to demonstrate where information is lacking in a phylogenetic tree. 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/111892527/186267196-de75a0f4-2dc9-4665-8c44-554634edffc0.png">
 
 To improve the likelihood of this tree we should include more closely related sequences to those colored in red, since it will help reduce the uncertainty of sequences in those clades.
 
+## Implementing
+
 **Requirements for ESR**
 
 IQ-Tree: http://www.iqtree.org/#download
-
-Dendropy:
 ```
-conda install -c bioconda dendropy
+sudo apt-get install iqtree
 ```
 
+Dendropy: https://dendropy.org/downloading.html
+```
+python3 -m pip install git+https://github.com/jeetsukumaran/DendroPy.git
+```
+
+NumPy: https://numpy.org/install/
+```
+pip install numpy
+```
+
+seqcon: 
+
+ancprobs:
+
+## Running
+
+Usage
+```
+./ESR_v0.1.sh -h 
+```
+
+Example: Perform ESR on an Apicomplexan L/MDH dataset on a computer with with 8 threads
+```
+./ESR_v0.1.sh -a Apico2020_seqs.fasta_mafft -t Apico2020_seqs.fasta_mafft.treefile -i Apico2020_seqs.fasta_mafft.iqtree -n 8
+```
