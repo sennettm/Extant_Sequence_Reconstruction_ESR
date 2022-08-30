@@ -62,3 +62,14 @@ Example: Perform ESR on an Apicomplexan L/MDH dataset on a computer with with 8 
 ```
 ./ESR_v0.1.sh -a Apico2020_seqs.fasta_mafft -t Apico2020_seqs.fasta_mafft.treefile -i Apico2020_seqs.fasta_mafft.iqtree -n 8
 ```
+
+## Common Errors
+
+Sequence names cannot contain ".1", as is common in an accession number. You will have to replace all "." with "_".
+
+If sequences contain very short branch lengths, then you may encounter the following:
+```
+.././get_LL.py:69: RuntimeWarning: divide by zero encountered in log
+  ln_prob=np.log(float(prob))
+  ```
+You will have to remove the offending sequence.
