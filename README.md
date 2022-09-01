@@ -14,13 +14,18 @@ This is useful for researchers who use ancestral sequence reconstruction (ASR) a
 
 ESR works by applying a leave-one-out cross-validation to each sequence in a phylogenetic tree and alignment.  
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/111892527/186263175-50b87311-8f82-41c4-97ca-de61cababddd.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/111892527/186263175-50b87311-8f82-41c4-97ca-de61cababddd.png">
 
 In short, extant nodes are treated like unknown ancestral nodes. A conditional probability distribution is calculated for an extant node, from which a sequence can be generated. This reconstructed sequence and its properties can be compared to the true sequence and its properties. 
 
 **What can we do with ESR?**
 
 We have determined that using the LG substitution matrix instead of the Poisson substitution matrix may slightly increase the number of incorrect residues in the most probable sequence reconstructions, but the most probable sequence reconstructions from LG are still more chemically similar to the true sequence than the most probable reconstructions from the Poisson.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/111892527/187996511-9b6ad4fe-a755-4671-8fe3-4768de32a47d.png">
+
+Blue are Grantham distances measured per SMP mistake from reconstructions generated with the Poisson substitution matrix, whereas orange are from the LG
+substitution matrix.
 
 In addition, we have used ESR to visualize the relative uncertainty of a probability distribution to demonstrate where information is lacking in a phylogenetic tree. 
 
