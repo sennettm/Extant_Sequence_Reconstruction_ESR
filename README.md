@@ -70,6 +70,16 @@ pip install biopython
 
 Download the ESR_script folder and Test_Data folder.
 
+## Output
+
+realprobs_#.txt contains the actual fraction correct  
+aveprobs_#.txt contains the average probability of each SMP sequence  
+tru_LnP_#.txt contains the true sequence ln-probability 
+SMP_LnP_#.txt contains the SMP sequence ln-probability  
+eLnP_#.txt contains the expected ln-probability of the sequence distribution  
+A folder containing the iqtree output files, including the .state file which contains the sequence distribution  
+something_recon_0.a2m & something_extant_0.a2m, are MSA files of the SMP and true sequences respectively  
+
 ## Running
 
 Copy the scripts and one of the test data sets into some test folder. 
