@@ -80,7 +80,7 @@ rm -rf ${FLD};
 
 rm -rf *.fst *.tre *.out *.phy *_${BL}.a2m;
 
-rm -rf *_node_*.txt;*
+rm -rf *_node_*.txt;
 #####################################################################################################
 #
 #modify tree and alignment for processing
