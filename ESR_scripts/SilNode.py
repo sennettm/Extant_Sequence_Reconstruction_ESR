@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/usr/bin/env python3
 #####################################################################################################
 #Script Name    : SilNode.py
 #Description    : Import a newick tree with node labels and export a newick tree without node labelsl
