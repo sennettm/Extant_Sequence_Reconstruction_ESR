@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #this script runs ancprobs to get the smp sequences and appends them to a recon alignment file
 #####################################################################################################
 #Script Name    : ms_crunch_all_leaves.sh
