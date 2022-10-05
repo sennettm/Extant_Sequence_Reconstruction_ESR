@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : ESR_v0.1.sh
 #Description    : Given an aligned set of sequences, a phylogenetic tree, and an evolutionary model
