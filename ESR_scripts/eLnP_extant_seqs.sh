@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : eLnP_extant_seqs.sh
 #Description    : Find the extant distribution and calculate the expected Ln(probability) 
