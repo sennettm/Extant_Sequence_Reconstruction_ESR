@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : iqtree_recon_asr.sh
 #Description    : performs ancestral sequence reconstruction using iqtree
