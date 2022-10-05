@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : LnP_SMP_seqs.sh
 #Description    : Pull the Ln(probability) of the SMP sequence  
