@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : ms_probs.sh
 #Description    : Generates the gapped alignment of SMP reconstructions and calculates the actual fraction
