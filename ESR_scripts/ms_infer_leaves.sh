@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #####################################################################################################
 #Script Name    : ms_infer_leaves.sh
 #Description    : Creates a directory for each extant sequence and in that directory infers the 
