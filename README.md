@@ -20,28 +20,19 @@ In short, extant nodes are treated like unknown ancestral nodes. A conditional p
 
 **What can we do with ESR?**
 
-We have determined that using the LG substitution matrix instead of the Poisson substitution matrix may slightly increase the number of incorrect residues in the most probable sequence reconstructions, but the most probable sequence reconstructions from LG are still more chemically similar to the true sequence than the most probable reconstructions from the Poisson.
+The side-chains from most probable sequence reconstructions using the LG substitution matrix are more chemically similar to the true sequence than the most probable reconstructions from the Poisson, according to the Grantham distance.
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/111892527/187996511-9b6ad4fe-a755-4671-8fe3-4768de32a47d.png">
 
 Blue are Grantham distances measured per SMP mistake from reconstructions generated with the Poisson substitution matrix, whereas orange are from the LG
-substitution matrix.
+substitution matrix. A lower Grantham distance means the mistake is more chemically similar to the true residue.
 
-Crucially, we demonstrate that the more predictive evolutionary model then the more likely the true residue and the less likely the incorrect most probable residue. (I am currently working on getting the leave-one-out cross-validation for model-selection code ready for Github.)
-
-![right_true_probs](https://user-images.githubusercontent.com/111892527/189773306-8cf81634-ce77-4ce1-92da-f6344fb8fb36.png)
-As the model grows in complexity from left to right the distribution of probabilities for the true residue increase. 
-
-![wrong_smp_probs](https://user-images.githubusercontent.com/111892527/189773360-cd4ebbe5-ad20-4714-97f3-249d1978a90c.png)
-As the model grows in complexity from left to right the distribution of probabilities for the incorrect SMP residue decreases.
-
-Therefore identifying the most predictive evolutionary model is important in ASR in order to maximize the probability of the true residue being incorporated into the reconstructed sequence.
 
 In addition, we have used ESR to visualize the relative uncertainty of a probability distribution to demonstrate where information is lacking in a phylogenetic tree. 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/111892527/186267196-de75a0f4-2dc9-4665-8c44-554634edffc0.png">
 
-To improve the likelihood of this tree we should include more closely related sequences to those colored in red, since it will help reduce the uncertainty of sequences in those clades.
+The tree is colored based on relative eLL for each node. Red indicates there is relatively more uncertainty and blue indicates relatively less uncertainty.  
 
 ## Implementing
 
